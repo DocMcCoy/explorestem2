@@ -211,8 +211,22 @@ footer > p {
     font-style: normal;
 }
 
-@media screen and ( max-height: 599px ) {
+@media screen and ( max-height: 499px ) {
+    .app {
+        grid-template-rows: minmax(70px, 1fr) 1fr minmax(200px, 2fr);
+    }
     .calltoaction {
         display: none;
+    }
+    nav {
+        height: 100%;
+    }
+
+    nav > ul {
+        padding-top: 13px;
+    }
+    nav img {
+        width: 132px;
+        object-fit: contain;
     }
  }
