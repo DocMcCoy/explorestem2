@@ -97,8 +97,9 @@ nav img {
     object-fit: contain;
 }
 
-nav > ul {
+nav ul {
     margin: 5px;
+    margin-right: 100px;
     padding-top: 27px;
 
     /* UL Contents */
@@ -417,6 +418,7 @@ footer > p {
     /* General Section Block Contents */
     display: grid;
     grid-template-rows: min-content min-content min-content;
+}
 /* #endregion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* #region ExploreSTEM span tags to make text appear closer to logo - - - - - */
