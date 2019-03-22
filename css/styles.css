@@ -110,16 +110,22 @@ nav a:hover {
     grid-template-columns: 2/-1;
     font-size: 1.5em;
     grid-area: b;
+    color: #216931;
+    text-shadow: 1px 1px 5px white;
+    text-align: right;
 }
 
-.calltoaction > a {
-grid-area: a;
+.calltoaction > h1 > a {
+    grid-area: a;
     background: #0b52bf;
     color: white;
     border-radius: 100px;
     text-align: center;
     text-justify: center;
-    height: 1.5em;
+    font-size: 16px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    text-shadow: none;
 }
 
 main {
@@ -204,3 +210,9 @@ footer > p {
     font-weight: 700;
     font-style: normal;
 }
+
+@media screen and ( max-height: 599px ) {
+    .calltoaction {
+        display: none;
+    }
+ }
