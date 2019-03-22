@@ -1,0 +1,10 @@
+{
+	"version": 2,
+	"public": true,
+	"name": "php-deployment",
+    "builds": [
+        { "src": "*.html", "use": "@now/static" },
+        { "src": "*.php", "use": "@now/php" },
+        { "src": "*.js", "use": "@now/node" }
+    ]
+}
