@@ -307,6 +307,47 @@ footer>p {
   background-position: center;
 }
 
+.about-page main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  margin: 0 1em;
+  padding-bottom: 1em;
+}
+
+.about-page main>section {
+  max-height: 500px;
+  background: #efefefb9;
+  box-shadow: 6px 6px 6px #0b53bf96;
+  padding: 1em;
+  border-radius: 5px;
+  border-bottom: 1px solid #0b52bf;
+  border-right: 1px solid #0b52bf;
+  /* General Section Block Contents */
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+.about-page main>section>p {
+  margin: 5px 0;
+}
+
+.about-page main>section>ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+.about-page main li {
+  list-style-type: disc;
+}
+
+
 /* #endregion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* #region Sessions Page Specific - - - - - - - - - - - - - - - - - - - - - - */
@@ -319,6 +360,24 @@ footer>p {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.65) 43%, rgba(255, 255, 255, 0.65) 56%, rgba(255, 255, 255, 1) 100%), url(../img/hero/sessions-background-explorestem.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.sessions-page .safety-warning {
+  color: red;
+}
+
+.sessions-page .safety-warning>ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+.sessions-page .safety-warning li {
+  list-style-type: disc;
 }
 
 /* #endregion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -548,6 +607,52 @@ footer>p {
 .contact-details {}
 
 /* #endregion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* #region Session Info Page Specific - - - - - - - - - - - - - - - - - - - - - - */
+
+/* #endregion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* #region MRU Session Page Specific - - - - - - - - - - - - - - - - - - - - - - */
+
+.session-info-page.mru {
+  background: white;
+  /* Fallback Background 1 */
+  background: url(../img/hero/mru-session-info-background-explorestem.jpg);
+  /* Fallback Background 2 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.65) 43%, rgba(255, 255, 255, 0.65) 56%, rgba(255, 255, 255, 1) 100%), url(../img/hero/mru-session-info-background-explorestem.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* #endregion */
+
+/* #region SAIT Session Page Specific - - - - - - - - - - - - - - - - - - - - - - */
+
+.session-info-page.sait {
+  background: white;
+  /* Fallback Background 1 */
+  background: url(../img/hero/sait-session-info-background-explorestem.jpg);
+  /* Fallback Background 2 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.65) 43%, rgba(255, 255, 255, 0.65) 56%, rgba(255, 255, 255, 1) 100%), url(../img/hero/sait-session-info-background-explorestem.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* #endregion */
+
+/* #region UofC Session Page Specific - - - - - - - - - - - - - - - - - - - - - - */
+
+.session-info-page.uofc {
+  background: white;
+  /* Fallback Background 1 */
+  background: url(../img/hero/uofc-sessions-background-explorestem.jpg);
+  /* Fallback Background 2 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.65) 43%, rgba(255, 255, 255, 0.65) 56%, rgba(255, 255, 255, 1) 100%), url(../img/hero/uofc-sessions-background-explorestem.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* #endregion */
 
 /* #region ExploreSTEM span tags to make text appear closer to logo - - - - - */
 
