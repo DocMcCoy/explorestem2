@@ -423,6 +423,38 @@ footer > p {
     display: grid;
     grid-template-rows: min-content min-content min-content;
 }
+
+.contact-cards {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    justify-self: center;
+    align-self: center;
+    width: 250px;
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: min-content min-content;
+    grid-gap: 5px;
+}
+
+.contact-card > img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
 /* #endregion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* #region ExploreSTEM span tags to make text appear closer to logo - - - - - */
