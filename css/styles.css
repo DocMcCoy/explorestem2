@@ -723,11 +723,27 @@ footer>p {
 }
 
 .session-info-page .app {
-  grid-template-rows: min-content 1fr 5fr;
+  grid-template-rows: min-content 1fr 4fr;
 }
 
 .session-info-page main>aside {
   grid-column: 1/-1;
+  /* contents */
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-auto-rows: auto;
+  grid-column-gap: 1em;
+  justify-items: center;
+  align-items: center;
+}
+
+.session-info-page main>aside>ul {
+  align-self: start;  
+  grid-column: 1/-1;
+  width: 100%;
+  /* contents */
+  display: flex;
+  justify-content: space-around;
 }
 
 .session-info-page main>section {
@@ -756,6 +772,19 @@ footer>p {
   grid-template-rows: min-content minmax(8px, 250px) minmax(300px, 1fr);
 }
 
+.session-info-page.mru main>aside {
+  display: grid;
+  justify-content: center;
+  border-left: 10px solid #0b52bf;
+}
+
+.session-info-page.mru main>section>section {
+  border-radius: 5px;
+  border: 1px solid #0b52bf;
+  border-left: 10px solid #0b52bf;
+  padding: 5px;
+}
+
 /* #endregion */
 
 /* #region SAIT Session Page Specific - - - - - - - - - - - - - - - - - - - - */
@@ -770,6 +799,28 @@ footer>p {
   background-position: center;
 }
 
+.session-info-page.sait > .app {
+  display: grid;
+  grid-template-rows: min-content minmax(8px, 100px) minmax(300px, 1fr);
+}
+
+.session-info-page.sait main>aside {
+  display: grid;
+  justify-content: center;
+  border-left: 10px solid #dd2b19;
+}
+
+.session-info-page.sait main>aside>img {
+  height: 62px;
+  object-fit: contain;
+}
+
+.session-info-page.sait main>section>section {
+  border-radius: 5px;
+  border: 1px solid #dd2b19;
+  border-left: 10px solid #dd2b19;
+  padding: 5px;
+}
 /* #endregion */
 
 /* #region UofC Session Page Specific - - - - - - - - - - - - - - - - - - - - */
@@ -782,6 +833,19 @@ footer>p {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.65) 43%, rgba(255, 255, 255, 0.65) 56%, rgba(255, 255, 255, 1) 100%), url(../img/hero/uofc-sessions-background-explorestem.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.session-info-page.uofc main>aside {
+  display: grid;
+  justify-content: center;
+  border-left: 10px solid #216931;
+}
+
+.session-info-page.uofc main>section>section {
+  border-radius: 5px;
+  border: 1px solid #216931;
+  border-left: 10px solid #216931;
+  padding: 5px;
 }
 
 /* #endregion */
