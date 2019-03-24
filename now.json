@@ -1,10 +1,8 @@
 {
-	"version": 2,
+	"version": 1,
 	"public": true,
-	"name": "php-deployment",
+	"name": "explorestem",
     "builds": [
-        { "src": "*.html", "use": "@now/static" },
-        { "src": "*.php", "use": "@now/php" },
-        { "src": "*.js", "use": "@now/node" }
+        { "src": "*.html", "use": "@now/static" }
     ]
 }

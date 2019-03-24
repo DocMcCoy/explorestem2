@@ -640,7 +640,7 @@ footer>p {
 
 /* #endregion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/* #region Contact Page Specific - - - - - - - - - - - - - - - - - - - - - - */
+/* #region Contact Page Specific  - - - - - - - - - - - - - - - - - - - - - - */
 
 .contact-page {
   background: white;
@@ -707,7 +707,7 @@ footer>p {
 
 /* #endregion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/* #region Session Info Page Specific - - - - - - - - - - - - - - - - - - - - - - */
+/* #region Session Info Page Specific - - - - - - - - - - - - - - - - - - - - */
 /* .session-info-page .calltoaction {
   display: none;
 } */
@@ -720,6 +720,10 @@ footer>p {
   grid-gap: 1em;
   margin: 0 1em;
   padding-bottom: 1em;
+}
+
+.session-info-page .app {
+  grid-template-rows: min-content 1fr 5fr;
 }
 
 .session-info-page main>aside {
@@ -735,7 +739,7 @@ footer>p {
 
 /* #endregion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/* #region MRU Session Page Specific - - - - - - - - - - - - - - - - - - - - - - */
+/* #region MRU Session Page Specific  - - - - - - - - - - - - - - - - - - - - */
 
 .session-info-page.mru {
   background: white;
@@ -754,7 +758,7 @@ footer>p {
 
 /* #endregion */
 
-/* #region SAIT Session Page Specific - - - - - - - - - - - - - - - - - - - - - - */
+/* #region SAIT Session Page Specific - - - - - - - - - - - - - - - - - - - - */
 
 .session-info-page.sait {
   background: white;
@@ -768,7 +772,7 @@ footer>p {
 
 /* #endregion */
 
-/* #region UofC Session Page Specific - - - - - - - - - - - - - - - - - - - - - - */
+/* #region UofC Session Page Specific - - - - - - - - - - - - - - - - - - - - */
 
 .session-info-page.uofc {
   background: white;
