@@ -65,6 +65,7 @@ form input {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   background-size: cover;
   /* body Contents */
   display: grid;
@@ -120,6 +121,15 @@ nav a {
   padding-right: 5px;
 }
 
+nav button {
+  background: none;
+  color: #0b52bf;
+  border: none;
+  transition: 0.3s;
+  height: 25px;
+  font-size: 25px;
+}
+
 nav a:hover {
   color: #216931;
 }
@@ -128,6 +138,63 @@ nav a.active {
   border-radius: 5px;
   background: #216931;
   color: white;
+}
+
+nav li:last-child {
+  display: none;
+}
+
+/* - - - - - Mobile Menu Section - - - - - */
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,0) 100%);
+  transition: 0.3s;
+  padding: 20px;
+  z-index: 10;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.mobile-menu button {
+  display: flex;
+  align-items: center;
+  background: none;
+  color: red;
+  border: none;
+  /* margin: 0 auto; */
+  padding: 10px 5% 10px 95%;
+}
+
+.mobile-menu a {
+  font-family: "din-condensed", sans-serif;
+  color: #0b52bf;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 5% 10px 95%;
+  font-size: 0.8em;
+  z-index: 1000;
+}
+
+.mobile-menu a:hover, .mobile-menu button:hover {
+  color: #216932;
+  text-shadow: 3px 3px 20px #0b52bf;
+}
+
+.closed {
+  transform: translate(100vw, 0);
 }
 
 /* - - - - - Traditional Hero Section - - - - - */
@@ -975,12 +1042,31 @@ footer>p {
 }
 
 @media screen and (max-width: 699px) {
+  .app {
+    grid-template-rows: 100px min-content 1fr;
+  }
+
   .home-page .app main {
     grid-template-columns: 1fr;
   }
 
-  nav>a>img {
+  .app nav>a>img {
     width: 175px;
+  }
+
+  .app nav ul {
+    justify-content: flex-end;
+  }
+
+  .app nav li:last-child {
+    display: inherit;
+    text-align: end;
+    margin-right: 10px;
+    font-size: 50px;
+  }
+
+  .app nav li:nth-child(n+1):nth-child(-n+7) {
+      display: none;
   }
 
   footer .footerschool {
