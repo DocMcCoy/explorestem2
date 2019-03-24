@@ -156,7 +156,7 @@ nav a.active {
   right: 0;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(rgba(255,255,255,1) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,0) 100%);
+  background: radial-gradient(ellipse at top right, rgb(255, 255, 255) 0%,rgb(255, 255, 255) 25%,rgba(255,255,255,0) 100%);
   transition: 0.3s;
   padding: 20px;
   z-index: 10;
@@ -168,14 +168,17 @@ nav a.active {
   justify-content: right;
   text-align: right;
 }
+.mobile-menu li {
+  padding-bottom: .33em;
+}
+
 .mobile-menu button {
   justify-self: flex-end;
   background: none;
-  color: red;
+  color: #dd2b19;
   border: none;
   height: 25px;
-  /* margin: 0 auto; */
-  /* padding: 10px 5% 10px 95%; */
+  margin-bottom: 1em;
 }
 
 .mobile-menu button>i {
@@ -183,7 +186,9 @@ nav a.active {
 }
 
 .mobile-menu a {
-  font-family: "din-condensed", sans-serif;
+  font-family: futura-pt-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   color: #0b52bf;
   font-weight: 400;
   text-transform: uppercase;
@@ -197,7 +202,6 @@ nav a.active {
 
 .mobile-menu a:hover, .mobile-menu button:hover {
   color: #216932;
-  text-shadow: 3px 3px 20px #0b52bf;
 }
 
 .closed {
@@ -384,14 +388,14 @@ footer>p {
 .about-page main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: auto;
+  grid-auto-rows: max-content;
   grid-gap: 1em;
   margin: 0 1em;
   padding-bottom: 1em;
 }
 
 .about-page main>section {
-  max-height: 500px;
+  /* max-height: 500px; */
   background: #efefefb9;
   box-shadow: 6px 6px 6px #0b53bf96;
   padding: 1em;
@@ -779,8 +783,6 @@ footer>p {
   object-fit: cover;
 }
 
-.contact-details {}
-
 /* #endregion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* #region Session Info Page Specific - - - - - - - - - - - - - - - - - - - - */
@@ -1045,7 +1047,7 @@ footer>p {
     display: none;
   }
 
-  .home-page .app main {
+  .app main {
     padding-top: 1em;
     grid-template-columns: 1fr;
   }
@@ -1095,6 +1097,10 @@ footer>p {
 
   footer .footerschool>img {
     justify-self: center;
+  }
+
+  footer {
+    font-size: .66em;
   }
 
 }
