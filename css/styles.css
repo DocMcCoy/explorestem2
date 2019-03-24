@@ -983,6 +983,20 @@ footer>p {
     width: 175px;
   }
 
+  footer .footerschool {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+
+  footer .footerschool>h4 {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  footer .footerschool>img {
+    justify-self: center;
+  }
 }
 
 /* #endregion */
