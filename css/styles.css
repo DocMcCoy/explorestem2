@@ -116,10 +116,18 @@ nav a {
   text-transform: uppercase;
   font-size: 1.5em;
   color: #0b52bf;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 nav a:hover {
   color: #216931;
+}
+
+nav a.active {
+  border-radius: 5px;
+  background: #216931;
+  color: white;
 }
 
 /* - - - - - Traditional Hero Section - - - - - */
