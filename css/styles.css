@@ -837,6 +837,7 @@ footer>p {
 
 .session-info-page main>section>section {
   display: grid;
+  grid-auto-rows: min-content;
   border-radius: 5px;
   padding: 1em;
   grid-row-gap: 1em;
