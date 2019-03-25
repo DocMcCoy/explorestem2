@@ -928,7 +928,7 @@ footer>p {
 
 .keynote-page main {
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
   grid-gap: 1em;
   padding: 1em;
@@ -939,9 +939,10 @@ footer>p {
 }
 
 .keynote-page .contact-card {
-  height: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  /* height: 100%; */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   grid-auto-rows: min-content;
+  justify-items: center;
 }
 
 .keynote-page .contact-card>img {
