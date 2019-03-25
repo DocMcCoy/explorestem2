@@ -858,6 +858,8 @@ footer>p {
 }
 
 .session-info-page.mru main>aside {
+  display: grid;
+  justify-content: center;
   border-left: 10px solid #0b52bf;
 }
 
@@ -881,6 +883,8 @@ footer>p {
 }
 
 .session-info-page.sait main>aside {
+  display: grid;
+  justify-content: center;
   border-left: 10px solid #dd2b19;
 }
 
