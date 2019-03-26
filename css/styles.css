@@ -216,7 +216,7 @@ nav a.active {
   grid-row: 2 / 3;
   grid-column: 1/-1;
   height: 100%;
-  padding: 0 1em 0;
+  padding: 0 2em 1em;
   /* Hero Contents */
   display: grid;
   grid-template-columns: 1fr 200px 1fr;
@@ -413,6 +413,23 @@ footer span:first-child {
   display: grid;
   grid-template-rows: min-content min-content min-content;
 }
+
+.about-page .about-img {
+  max-height: 250px;
+  max-width: 250px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.about-page .about-img:first-child {
+  float: right;
+}
+
+.about-page .about-img:nth-child(2) {
+  float: left;
+}
+
 
 .about-page main>section>p {
   margin: 5px 0;
