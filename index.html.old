@@ -82,16 +82,39 @@
     <!-- Main Content -->
     <main>
 
-      <!-- Links to Surveys -->
+      <!-- Registration Form -->
       <section>
-        <h2>Thank you for attending the 20th Annual <span class="explore">Explore</span><span class="stem">STEM</span> Conference for Grade 9 girls.</h2>
-        <h3>Please help us to offer future students the best Conference we can by sharing your feedback today. Please take 2 to 3 minutes to complete the new online survey using your mobile device through the link provided below.</h3>
-        <p>If you attended Mount Royal University, Please <a href="https://survey.ucalgary.ca/jfe/form/SV_2mArWVDziyGn3W5">Click Here</a></p>
-        <p>If you attended SAIT, Please <a href="https://survey.ucalgary.ca/jfe/form/SV_diOcDOdXdxPoqGx">Click Here</a></p>
-        <p>If you attended University of Calgary, Please <a href="https://survey.ucalgary.ca/jfe/form/SV_4T8ORGCwSkuYkPr">Click Here</a></p>
-        <h3>Thank you and we hope you enjoyed your day at Explore STEM!!</h3>
+        <h2><span class="explore">Explore</span><span class="stem">STEM</span>
+          Registration</h2>
+        <p>Online Registration will open on <b>Wednesday, April 10, 2019 at 9:00am</b></p>
+        <form action="post" class="session-register-form" id="regsiter1">
+          <label for="userName">Username:</label>
+          <input type="text" name="userName" id="userName">
+          <label for="password">Password:</label>
+          <input type="text" name="password" id="password">
+          <input type="submit" id="contact-submit" value="Submit">
+        </form>
       </section>
-      
+
+      <!-- Link block for Session Info -->
+      <section>
+        <h2><span class="explore">Explore</span><span class="stem">STEM</span>
+          Schedule</h2>
+        <p>Explore STEM will be held on <b>Wednesday, May 15, 2019</b> and over 850
+          girls from Calgary and beyond will attend sessions at either Mount
+          Royal University, Southern Alberta Institute of Technology (SAIT), or the University of Calgary.</p>
+        <a href="./sessions.html">Click Here for Sessions</a>
+      </section>
+
+      <!-- Link Block for Schedule Info -->
+      <section>
+        <h2><span class="explore">Explore</span><span class="stem">STEM</span>
+          Session Info</h2>
+        <p>Explore STEM offers many exciting and hands-on technology sessions
+          at Mount Royal University, Southern Alberta Institute of Technology (SAIT), and the University of Calgary.</p>
+        <a href="./schedule.html">Click Here for Schedules</a>
+      </section>
+
     </main>
 
   </div> <!-- End of "App"-->
